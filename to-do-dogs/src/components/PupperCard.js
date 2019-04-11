@@ -1,14 +1,17 @@
-import React from "react";
+import React from 'react';
 
-function PupperCard(props) {
-    return (
-        <div className="pupper-card" >
-            <img src={props.imgUrl} />
-            <h3>A friendly {props.breed} commends you on your efforts</h3>
-            <p>{props.greeting}</p>
-            <p>{props.dogMessage}</p>
+import dogs from '../mocks/dogs';
+
+
+function PupperCard() {
+    console.log(Object.keys(dogs))
+    return(
+    dogs.map(dog => (
+        <div key={dog.id}>
+        <img src={dog.imgUrl}/>
         </div>
-    )
+    )))
 }
 
 export default PupperCard
+

@@ -1,17 +1,21 @@
 import React from 'react';
 import TodoItem from './TodoItem'
 
+import todos from '../mocks/todos';
+
+
 function MainContent() {
-    return (
-        <div className="todo-list">
-            <h1>Todos with Doggos</h1>
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
+    console.log(Object.keys(todos))
+    return(
+    todos.map(todo => (
+        <div key={todo.id} className="todo-list">
+        <div className="todo-item">
+         <input type="checkbox" checked={todo.completed}/>
+        <p className='task'>{todo.task}</p>
         </div>
-    )
+        </div>
+    )))
 }
 
 export default MainContent
+
