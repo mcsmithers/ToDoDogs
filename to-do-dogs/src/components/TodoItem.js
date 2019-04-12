@@ -1,12 +1,14 @@
 import React from 'react';
 
-function TodoItem() {
-    return (
-        <div className="todo-item">
-            <input type="checkbox" />
-            <p>Placeholder text, yay</p>
-        </div>
-    )
+class TodoItem extends React.Component {
+    render (){
+        return (
+            <div className="todo-item">
+                <input type="checkbox"/>
+                <p>Let's add some things to do!</p>
+            </div>
+        )
+    }
 }
 
 export default TodoItem

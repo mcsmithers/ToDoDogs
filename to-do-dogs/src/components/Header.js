@@ -1,13 +1,16 @@
 import React from 'react';
-function Header() {
-    return (
-        <div className="navbar">
-            <ul className="nav-links">
-                {/* <li><a href="#">Link</a></li>
-                <li><a href="#">Link</a></li> */}
-            </ul>
-        </div>
-    )
+
+class Header extends React.Component {
+    render () {
+        return (
+            <div className="navbar">
+                <ul className="nav-links">
+                    {/* <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li> */}
+                </ul>
+            </div>
+        )
+    }
 }
 
 

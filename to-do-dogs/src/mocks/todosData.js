@@ -1,4 +1,4 @@
-const todos = [
+const todosData = [
     { id: "1", task: "Call mom before she kills me", completed: false },
     { id: "2", task: "Take car to get oil changed", completed: false },
     { id: "3", task: "Change out winter and summer clothes", completed: true },
@@ -7,4 +7,4 @@ const todos = [
     { id: "6", task: "Give the doggy a bath", completed: false }
 ]
 
-export default todos;
+export default todosData;

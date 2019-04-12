@@ -1,18 +1,21 @@
 import React from 'react';
-function Footer() {
-    return (
-        <div className="footer">
-            <ul className="footer-links">
-                {/* <li><a href="#">Link</a></li>
 
-                <li><a href="#">Link</a></li>
+class Footer extends React.Component {
+    render() {
+        return (
+            <div className="footer">
+                <ul className="footer-links">
+                    {/* <li><a href="#">Link</a></li>
 
-                <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
 
-                <li><a href="#">Link</a></li> */}
-            </ul >
-        </div >
-    )
+                    <li><a href="#">Link</a></li>
+
+                    <li><a href="#">Link</a></li> */}
+                </ul >
+            </div >
+        )
+    }
 }
 
 
